@@ -1,4 +1,4 @@
-from .abc_figure import Figure
+from abc_figure import Figure
 from math import pi as PI
 
 class Rectangle(Figure):
