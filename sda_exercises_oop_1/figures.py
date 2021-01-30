@@ -1,6 +1,7 @@
 from abc_figure import Figure
 from math import pi as PI
 
+
 class Rectangle(Figure):
 
     def __init__(self, high: float, width: float):
@@ -10,13 +11,15 @@ class Rectangle(Figure):
     def get_area(self) -> float:
         return self.high * self.width
 
+
 class Circle(Figure):
 
     def __init__(self, radius: float):
         self.radius = radius
 
     def get_area(self) -> float:
-        return PI * self.radius **2
+        return PI * self.radius ** 2
+
 
 class Triangle(Figure):
 
@@ -25,4 +28,4 @@ class Triangle(Figure):
         self.base = base
 
     def get_area(self) -> float:
-        return (self.high * self.base)/2.0
+        return (self.high * self.base) / 2.0
