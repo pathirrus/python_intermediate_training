@@ -9,10 +9,16 @@ def main():
     cat_object4 = Cat("Mruczek", "meow")
 
     list_cats = [cat_object, cat_object2, cat_object3, cat_object4]
-    for cat in list_cats:
-        cat_sound = cat.make_sound()
-        print(cat_sound)
+    # for cat in list_cats:
+    #     cat_sound = cat.make_sound()
+    #     print(cat_sound)
 
+    cat_object.eat_mouse()
+    cat_object.eat_mouse()
+    cat_object.eat_mouse()
+
+    print("Teraz bedzie zarl drugi kot")
+    cat_object3.eat_mouse()
 
 if __name__ == "__main__":
     main()
