@@ -29,8 +29,9 @@ def main():
 
     anima_list = [cat_object4, cat_object, cat_object2, dog_object2, dog_object1]
     for animal in anima_list:
-        animal_sound =animal.make_sound()
+        animal_sound = animal.make_sound()
         print(animal_sound)
+
 
 if __name__ == "__main__":
     main()
