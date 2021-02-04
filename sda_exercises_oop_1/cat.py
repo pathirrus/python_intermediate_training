@@ -1,4 +1,7 @@
-from sda_exercises_oop_1 import movable
+from abc import ABC, abstractmethod
+from sda_exercises_oop_1.movable import Movable
+
+
 class Cat:
     def __init__(self, name: str, sound="miau", eaten_mouse=0):
         self.name = name
@@ -13,4 +16,6 @@ class Cat:
         print(f'Zjadłem {self.eaten_mouse} myszy')
         return self.eaten_mouse
 
-    def move(Movable):
+    def make_move(Movable):
+        def move(self):
+            return "idę"

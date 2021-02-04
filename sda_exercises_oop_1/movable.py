@@ -7,7 +7,3 @@ class Movable(ABC):
     def move(self):
         pass
 
-
-class Car(Movable):
-    def move(self):
-        return "jadę"
