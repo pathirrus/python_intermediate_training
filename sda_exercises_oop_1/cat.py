@@ -1,3 +1,4 @@
+from sda_exercises_oop_1 import movable
 class Cat:
     def __init__(self, name: str, sound="miau", eaten_mouse=0):
         self.name = name
@@ -11,3 +12,5 @@ class Cat:
         self.eaten_mouse += 1
         print(f'Zjadłem {self.eaten_mouse} myszy')
         return self.eaten_mouse
+
+    def move(Movable):
