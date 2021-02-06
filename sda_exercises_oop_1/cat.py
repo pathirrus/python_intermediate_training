@@ -1,9 +1,11 @@
+from sda_exercises_oop_1.animal import Animals
 from sda_exercises_oop_1.movable import Movable
 
 
-class Cat (Movable):
+class Cat(Movable, Animals):
+
     def __init__(self, name: str, sound="miau", eaten_mouse=0):
-        self.name = name
+        Animals.__init__(self, name)
         self.sound = sound
         self.eaten_mouse = eaten_mouse
 
@@ -17,5 +19,8 @@ class Cat (Movable):
 
     def move(self) -> str:
         return"idem"
+
+    def drink(self):
+        print(f'Cat drink water')
 
 

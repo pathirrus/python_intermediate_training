@@ -1,6 +1,13 @@
-class Dog:
+from sda_exercises_oop_1.animal import Animals
+
+
+
+class Dog(Animals):
+    def drink(self):
+        print("Dog dring beer")
+
     def __init__(self, name: str, sound="hau"):
-        self.name = name
+        super().__init__(name)          #wykorzysstujemy super bo ma tylko jeden arg
         self.sound = sound
 
     def make_sound(self) -> str:
