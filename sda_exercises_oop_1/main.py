@@ -1,3 +1,4 @@
+from sda_exercises_oop_1.car import Car
 from sda_exercises_oop_1.cat import Cat
 from sda_exercises_oop_1.dog import Dog
 
@@ -32,6 +33,12 @@ def main():
         animal_sound = animal.make_sound()
         print(animal_sound)
 
+    car = Car()
+    print(car.move())
+
+
+    cat = Cat("Mudżin")
+    print(cat.move())
 
 if __name__ == "__main__":
     main()

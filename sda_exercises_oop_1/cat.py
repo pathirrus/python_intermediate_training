@@ -15,7 +15,7 @@ class Cat (Movable):
         print(f'Zjadłem {self.eaten_mouse} myszy')
         return self.eaten_mouse
 
-    def move(self):
-        print("idem")
+    def move(self) -> str:
+        return"idem"
 
 
