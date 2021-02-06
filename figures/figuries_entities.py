@@ -2,6 +2,13 @@ import abc
 from math import pi
 
 
+def count_area_function(*args):
+    area = 0.0
+    for arg in args:
+        area = arg.get_area()
+        return area
+
+
 class Figure(abc.ABC):
 
     @abc.abstractmethod
@@ -14,6 +21,7 @@ class Figure(abc.ABC):
         for figure in figures:
             area += figure.get_area()
         return area
+
 
 
 class Circle(Figure):
