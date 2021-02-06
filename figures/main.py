@@ -19,6 +19,10 @@ def main():
     area = count_area_function(circle, triangle, rectangle2)
     print(area)
 
+    check_area = Figure.check_area(100, [circle,  triangle2])
+    print(check_area)
+    print(Figure.count_area([circle,  triangle2]))
+
 
 if __name__ == "__main__":
     main()

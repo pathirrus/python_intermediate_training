@@ -22,6 +22,10 @@ class Figure(abc.ABC):
             area += figure.get_area()
         return area
 
+    @staticmethod
+    def check_area(some_area: float, figure_list: list) -> bool:
+        figure_area = Figure.count_area(figure_list)
+        return some_area > figure_area
 
 
 class Circle(Figure):
