@@ -5,7 +5,7 @@ from math import pi
 def count_area_function(*args):
     area = 0.0
     for arg in args:
-        area = arg.get_area()
+        area += arg.get_area()
         return area
 
 
