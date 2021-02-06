@@ -1,0 +1,21 @@
+import pytest
+from figures import *
+from figures.figuries_entities import Circle, Triangle, Rectangle, Figure
+
+
+def test_check_area():
+    #  given
+    circle = Circle(1)
+    # circle2 = Circle(8)
+
+    triangle = Triangle(2, 1)
+    # triangle2 = Triangle(12, 3)
+
+    rectangle = Rectangle(2, 2)
+    # rectangle2 = Rectangle(4, 6)
+
+    #  when
+    result = Figure.count_area([circle, triangle, rectangle])
+
+    #  then
+    assert result == 8.142
