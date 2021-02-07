@@ -1,5 +1,3 @@
-import pytest
-from figures import *
 from figures.figuries_entities import Circle, Triangle, Rectangle, Figure
 
 
@@ -19,3 +17,10 @@ def test_check_area():
 
     #  then
     assert result == 8.142
+
+def test_compare_area():
+    #  given
+    circle = Circle(1)
+    triangle = Triangle(2, 1)
+    rectangle = Rectangle(2, 2)
+
