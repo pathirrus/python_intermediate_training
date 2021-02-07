@@ -31,6 +31,18 @@ def case_3(nemerator: int, denumerator: int) -> float:
         resoult = nemerator / denumerator
     except ZeroDivisionError as zde:
         print("Nie dziel przez 0!")
-        #resoult = sys.float_info.max
+        # resoult = sys.float_info.max
         resoult = float(sys.maxsize)
     return resoult
+
+
+def case_4(dictionary: dict):
+    key = 'items'
+    try:
+        items: list = dictionary[key]
+        for item in items:
+            print(item)
+    except KeyError as ke:
+        print(f'Key {key} not found, more info {ke.args}')
+
+

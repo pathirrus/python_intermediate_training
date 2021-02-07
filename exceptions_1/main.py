@@ -1,4 +1,4 @@
-from exceptions_1.exercises import case_1, case_2, case_3
+from exceptions_1.exercises import case_1, case_2, case_3, case_4
 
 
 def main():
@@ -12,6 +12,12 @@ def main():
         print(f'Value error {ve.args}')
 
     print(case_3(10, 0))
+
+    dictionary = {
+        'products': ['masło', 'chleb']
+    }
+    case_4(dictionary)
+
 
     print("Finish")
 
