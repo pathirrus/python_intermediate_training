@@ -1,4 +1,4 @@
-from exceptions_1.exercises import case_1, case_2
+from exceptions_1.exercises import case_1, case_2, case_3
 
 
 def main():
@@ -10,6 +10,8 @@ def main():
         case_2("")
     except ValueError as ve:
         print(f'Value error {ve.args}')
+
+    print(case_3(10, 0))
 
     print("Finish")
 

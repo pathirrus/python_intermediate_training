@@ -1,3 +1,6 @@
+import sys
+
+
 def case_1():
     list_of_numbers = [1, 2, 31, 54, 32]
 
@@ -21,3 +24,13 @@ def case_2(name: str):
         raise ValueError('String is empty')
     print(f'Given name is {name}')
 
+
+def case_3(nemerator: int, denumerator: int) -> float:
+    resoult = 0
+    try:
+        resoult = nemerator / denumerator
+    except ZeroDivisionError as zde:
+        print("Nie dziel przez 0!")
+        #resoult = sys.float_info.max
+        resoult = float(sys.maxsize)
+    return resoult
