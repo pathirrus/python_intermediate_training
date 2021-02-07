@@ -45,6 +45,7 @@ def case_4(dictionary: dict):
     except KeyError as ke:
         print(f'Key {key} not found, more info {ke.args}')
 
+
 def case_4_v2(dictionary: dict):
     key = 'items'
     items: list = dictionary.get(key, [])
@@ -55,4 +56,23 @@ def case_4_v2(dictionary: dict):
 
 
 def case_6():
-    raise NotImplementedError ('Solved in future')
+    raise NotImplementedError('Solved in future')
+
+
+def case_7():
+    fd = None
+    try:
+        fd = open('C:/Users/Patryq/Desktop/aaa.txt')
+    except IOError as ioer:
+        print(f'Exception cought {ioer.args}')
+    finally:
+        if fd:
+            print('File descriptor closing')
+            fd.close()
+
+def case_7_v2():
+    try:
+        with open('C:/Users/Patryq/Desktop/aaa.txt') as fd:
+            print('File is open')
+    except IOError as ioer:
+        print(f'Exception cought {ioer.args}')
