@@ -45,4 +45,10 @@ def case_4(dictionary: dict):
     except KeyError as ke:
         print(f'Key {key} not found, more info {ke.args}')
 
-
+def case_4_v2(dictionary: dict):
+    key = 'items'
+    items: list = dictionary.get(key, [])
+    for item in items:
+        print(item)
+    if not items:
+        print('Empty list or key dont exist')
