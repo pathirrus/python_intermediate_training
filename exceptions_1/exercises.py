@@ -2,7 +2,15 @@ def case_1():
     list_of_numbers = [1, 2, 31, 54, 32]
 
     print("Case_1 before")
-    result = list_of_numbers[5]
+    try:
+        result = list_of_numbers[5]
+    except IndexError as ie:
+        print(f'1. Exceptions caught {ie.args}')
+    except Exception as ex:
+        print(f'2. Exception cought{ex.args}')
     print("Case_1 after")
 
-
+    try:
+        result = list_of_numbers[5]
+    except (IndexError, Exception) as e:
+        print(f'3. Exceptions caught {e.args}')
